@@ -1,0 +1,96 @@
+sendxmpp-
+------------------------------------------
+
+Commandline XMPP (jabber) utility
+
+A perl script to send XMPP (jabber) messages, similar to what mail(1)
+does for mail. XMPP is an open, non-proprietary protocol for instant
+messaging. See http://www.jabber.org for more information.
+
+Additional Perl CPAN modules needed. Run this command before starting the
+program:
+
+  $ perl -MCPAN -e 'install $_ for @ARGV' Net::XMPP
+
+Use case:
+
+  Suppose you have to manage a remote server somewhere, and you have
+  to keep an eye on its cpu load-average. You could write a script to
+  check this, and run it periodically from cron. This script could
+  contain something like:
+
+  if test "$cpuload" -gt "$CPULOADMAX"; then
+    top -b -n 1 | sendxmpp -s "wake up! cpu load $cpuload at `hostname`" \
+	someone@jabber.org
+  fi
+
+  And on my client machine, my jabber-client wil pop-up a message,
+  depending on your client.
+
+Runtime requirements:
+  cygwin
+
+Build requirements:
+  cygwin
+
+Canonical homepage:
+  http://sendxmpp.platon.sk
+  http://packages.debian.org/sendxmpp
+
+Canonical download:
+  See above
+
+Version control repository:
+  http://platon.sk/cvs/cvs.php/sendxmpp/
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  Maintainer: Lubomir Host <rajo@platon.sk>
+  Bugs: Lubomir Host <rajo@platon.sk>
+
+License:
+  GPL
+
+Language:
+  C
+
+------------------------------------
+
+Build instructions:
+  unpack sendxmpp--0.0.8+cvs20070910-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./sendxmpp-*.sh all
+
+This will create:
+  sendxmpp--0.0.8+cvs20070910-1.tar.bz2
+  sendxmpp--0.0.8+cvs20070910-1-src.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary distribution:
+
+/etc/postinstall/sendxmpp.sh
+/usr/bin/sendxmpp
+/usr/lib/perl5/5.8/cygwin/perllocal.pod.sendxmpp-postinstall_append
+/usr/lib/perl5/vendor_perl/5.8/cygwin/auto/sendxmpp/.packlist
+/usr/share/doc/Cygwin/sendxmpp-0.0.8+cvs20070910.README
+/usr/share/doc/sendxmpp-0.0.8+cvs20070910/META.yml
+/usr/share/doc/sendxmpp-0.0.8+cvs20070910/README
+/usr/share/man/man1/sendxmpp.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.0.8+cvs20070910-1 -----
+- Initial release 2008-02-14 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2008 Jari Aalto; Licenced under GPL v2 or later

@@ -1,0 +1,2 @@
+tag1: sendxmpp
+  http://packages.debian.org/unstable/sendxmpp pregexp:orig.tar.gz file:sendxmpp_1.13.orig.tar.gz new: x:
