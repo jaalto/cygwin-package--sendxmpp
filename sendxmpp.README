@@ -7,10 +7,10 @@ A perl script to send XMPP (jabber) messages, similar to what mail(1)
 does for mail. XMPP is an open, non-proprietary protocol for instant
 messaging. See http://www.jabber.org for more information.
 
-Additional Perl CPAN modules needed. Run this command before starting the
-program:
+Additional Perl CPAN modules may be needed. Run this command before starting
+the program:
 
-  $ perl -MCPAN -e 'install $_ for @ARGV' Net::XMPP
+  perl -MCPAN -e 'install $_ for @ARGV' Net::XMPP Authen::SASL
 
 Use case:
 
@@ -24,16 +24,17 @@ Use case:
 	someone@jabber.org
   fi
 
-  And on my client machine, my jabber-client wil pop-up a message,
-  depending on your client.
+  And on a client machine, the jabber-client wil pop-up a message,
+  depending on used client.
 
 Runtime requirements:
-  cygwin
+  perl
 
 Build requirements:
-  cygwin
+  perl
 
 Canonical homepage:
+  http://freecode.com/projects/sendxmpp
   http://sendxmpp.platon.sk
   http://packages.debian.org/sendxmpp
 
@@ -57,40 +58,35 @@ License:
   GPL
 
 Language:
-  C
+  Perl
 
 ------------------------------------
 
 Build instructions:
-  unpack sendxmpp--0.0.8+cvs20070910-1-src.tar.bz2
+  unpack sendxmpp-1.22-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./sendxmpp-*.sh all
 
 This will create:
-  sendxmpp--0.0.8+cvs20070910-1.tar.bz2
-  sendxmpp--0.0.8+cvs20070910-1-src.tar.bz2
+  sendxmpp-1.22-1.tar.bz2
+  sendxmpp-1.22-1-src.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary distribution:
-
-/etc/postinstall/sendxmpp.sh
-/usr/bin/sendxmpp
-/usr/lib/perl5/5.8/cygwin/perllocal.pod.sendxmpp-postinstall_append
-/usr/lib/perl5/vendor_perl/5.8/cygwin/auto/sendxmpp/.packlist
-/usr/share/doc/Cygwin/sendxmpp-0.0.8+cvs20070910.README
-/usr/share/doc/sendxmpp-0.0.8+cvs20070910/META.yml
-/usr/share/doc/sendxmpp-0.0.8+cvs20070910/README
-/usr/share/man/man1/sendxmpp.1.gz
+  See Cygwin package archive
 
 ------------------
 
 Port Notes:
 
+----- version 1.22-1 -----
+- New upstream release 2012-09-19 Jari Aalto
+
 ----- version 0.0.8+cvs20070910-1 -----
 - Initial release 2008-02-14 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2008-2012 Jari Aalto; Licenced under GPL v2 or later
