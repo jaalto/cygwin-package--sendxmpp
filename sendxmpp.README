@@ -1,7 +1,7 @@
-sendxmpp-
+sendxmpp
 ------------------------------------------
 
-Commandline XMPP (jabber) utility
+Command line XMPP (jabber) utility
 
 A perl script to send XMPP (jabber) messages, similar to what mail(1)
 does for mail. XMPP is an open, non-proprietary protocol for instant
@@ -20,15 +20,12 @@ Use case:
   contain something like:
 
   if test "$cpuload" -gt "$CPULOADMAX"; then
-    top -b -n 1 | sendxmpp -s "wake up! cpu load $cpuload at `hostname`" \
-	someone@jabber.org
+    top -b -n 1 | 
+    sendxmpp -s "WARN: cpu load $cpuload at $(hostname)" someone@jabber.org
   fi
 
-  And on a client machine, the jabber-client wil pop-up a message,
-  depending on used client.
-
 Runtime requirements:
-  perl
+  perl + Net::XMPP Authen::SASL
 
 Build requirements:
   perl
