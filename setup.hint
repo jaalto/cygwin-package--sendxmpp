@@ -1,3 +1,4 @@
+# ARCH=noarch
 sdesc: "Command line XMPP (jabber) utility"
 ldesc: "A perl script to send XMPP (jabber) messages, similar to what mail(1)
 does for mail. XMPP is an open, non-proprietary protocol for instant
