@@ -58,15 +58,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack sendxmpp-1.23-1-src.tar.bz2
+  unpack sendxmpp-1.23-2-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./sendxmpp-*.sh all
 
 This will create:
-  sendxmpp-1.23-1.tar.xz
-  sendxmpp-1.23-1-src.tar.xz
+  sendxmpp-1.23-2.tar.xz
+  sendxmpp-1.23-2-src.tar.xz
 
 -------------------------------------------
 
@@ -76,6 +76,11 @@ Files included in the binary distribution:
 ------------------
 
 Port Notes:
+
+----- version 1.23-2 -----
+- New release 2016-06-12 Jari Aalto
+- Remove custom CPAN and use Cygwin's packages
+  perl-Authen-SASL perl-Net-XMPP
 
 ----- version 1.23-1 -----
 - New upstream release 2014-06-13 Jari Aalto
@@ -87,4 +92,4 @@ Port Notes:
 - Initial release 2008-02-14 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008-2014 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2008-2016 Jari Aalto; Licenced under GPL v2 or later

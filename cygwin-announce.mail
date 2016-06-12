@@ -1,5 +1,5 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: sendxmpp 1.23-1 -- Command line XMPP (jabber) utility
+Subject: Updated: sendxmpp 1.23-2 -- Command line XMPP (jabber) utility
 --text follows this line--
 
 PACKAGE DESCRIPTION
@@ -14,6 +14,8 @@ messaging. See http://www.jabber.org for more information.
 
 CHANGES SINCE LAST RELEASE
 ==========================
+
+Switch to use Cygwin packages: perl-Authen-SASL perl-Net-XMPP
 
 http://opensource.platon.sk/cvs/cvs.php/sendxmpp/Changes?rev=HEAD
 
