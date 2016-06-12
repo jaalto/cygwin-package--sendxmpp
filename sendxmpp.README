@@ -7,11 +7,6 @@ A perl script to send XMPP (jabber) messages, similar to what mail(1)
 does for mail. XMPP is an open, non-proprietary protocol for instant
 messaging. See http://www.jabber.org for more information.
 
-Additional Perl CPAN modules may be needed. Run this command before starting
-the program:
-
-  perl -MCPAN -e 'install $_ for @ARGV' Net::XMPP
-
 Use case:
 
   Suppose you have to manage a remote server somewhere, and you have
@@ -27,6 +22,7 @@ Use case:
 Runtime requirements:
   perl
   perl-Authen-SASL
+  perl-Net-XMPP
 
 Build requirements:
   perl
