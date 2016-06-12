@@ -10,7 +10,7 @@ messaging. See http://www.jabber.org for more information.
 Additional Perl CPAN modules may be needed. Run this command before starting
 the program:
 
-  perl -MCPAN -e 'install $_ for @ARGV' Net::XMPP Authen::SASL
+  perl -MCPAN -e 'install $_ for @ARGV' Net::XMPP
 
 Use case:
 
@@ -25,10 +25,12 @@ Use case:
   fi
 
 Runtime requirements:
-  perl + Net::XMPP Authen::SASL
+  perl
+  perl-Authen-SASL
 
 Build requirements:
   perl
+  quilt
 
 Canonical homepage:
   http://freecode.com/projects/sendxmpp
