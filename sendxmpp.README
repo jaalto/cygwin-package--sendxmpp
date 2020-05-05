@@ -58,15 +58,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack sendxmpp-1.24-1-src.tar.bz2
+  unpack sendxmpp-1.24-2-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./sendxmpp-*.sh all
 
 This will create:
-  sendxmpp-1.24-1.tar.xz
-  sendxmpp-1.24-1-src.tar.xz
+  sendxmpp-1.24-2.tar.xz
+  sendxmpp-1.24-2-src.tar.xz
 
 -------------------------------------------
 
@@ -76,6 +76,9 @@ Files included in the binary distribution:
 ------------------
 
 Port Notes:
+
+----- version 1.24-2 -----
+- Rebuild for perl 5.30.2
 
 ----- version 1.24-1 -----
 - New upstream release 2017-09-26 Jari Aalto
@@ -95,4 +98,4 @@ Port Notes:
 - Initial release 2008-02-14 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008-2017 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2008-2020 Jari Aalto; Licenced under GPL v2 or later
