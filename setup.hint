@@ -4,4 +4,4 @@ ldesc: "A perl script to send XMPP (jabber) messages, similar to what mail(1)
 does for mail. XMPP is an open, non-proprietary protocol for instant
 messaging. See www.jabber.org for more information."
 category: Net Perl
-requires: perl perl-Authen-SASL perl-Net-XMPP
+requires: perl5_032 perl-Authen-SASL perl-Net-XMPP
